@@ -13,11 +13,13 @@ let check=false;
 for(let i=0; i< frigorifero.length; i++){
     if(frigorifero[i] == "cocomero"){
         check=true;
-        console.log("Trovato! Devo solo preparare il cocktail.");
     }
 }
 
-// se nel ciclo nonho trovato il cocomero devo comprarlo
- if(check == false ){
+// se nel ciclo non ho trovato il cocomero devo comprarlo
+ if(check){
+    console.log("Trovato! Devo solo preparare il cocktail.");
+ }
+else{
     console.log("Oh no, devo uscire a comprare il cocomero!");
 }  
